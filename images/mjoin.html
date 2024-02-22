@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>엑시빗뮤지엄-모바일-회원가입</title>
+
+  
+  <!-- 파비콘 이미지 삽입하기 -->
+  <link rel="shortcut icon" href="favitcon.ico" type="image/x-icon">
+
+
+
+  <!-- 1. 여백초기화 -->
+  <link rel="stylesheet" href="../css/reset.css" type="text/css">
+
+  <!-- 2. 공통서식 (메인, 서브, 로그인, 회원가입)-->
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+
+  <!-- 3. 레이아웃 -->
+  <link rel="stylesheet" href="../css/m_layout.css" type="text/css">
+
+  <!--4. 로그인 레이아웃 -->
+  <link rel="stylesheet" href="../css/m_join.css" type="text/css">
+  
+</head>
+<body>
+  <!-- ~~~~~ 헤더 ~~~~~ -->
+  <header>
+    <!-- 로고 -->
+    <h1>
+      <a href="./index.html" title="메인페이지로 바로가기"><img src="./logo.svg" alt="상단로고"></a>
+    </h1>
+    
+
+    <!-- 검색 아이콘 -->
+    <input type="checkbox" id="s_toggle">
+    <label for="s_toggle" class="s_btn">
+      <img src="./h_search.png" alt="검색아이콘">
+      <!-- <i class="fas fa-search"></i> -->
+    </label>
+
+    
+    <div class="srh">
+      <ul>
+        <li>
+          <div class="srh_b">
+          <!-- 검색_닫기버튼 -->
+          <label for="s_toggle" class="c_s_btn">
+            <img src="./h_close_search_icon.png" alt="닫기아이콘">
+            <!-- <i class="fas fa-close"></i> -->
+          </label>
+            <input type="text" placeholder="검색어를 입력해주세요">
+            <input type="submit" value="검색">
+  
+            <div class="srh_text">
+              <a href="#" title="전시회">#전시회</a>
+              <a href="#" title="미디어아트">#미디어아트</a>
+              <a href="#" title="무료전시">#무료 전시</a>
+              <a href="#" title="요시다유니">#요시다유니</a>
+            </div>
+          </div>
+        </li>
+  
+      </ul>
+    </div>
+
+
+    <!-- 햄버거 아이콘 -->
+    <input type="checkbox" id="c_toggle">
+    <label for="c_toggle" class="t_btn">
+      <img src="./h_menu.png" alt="메뉴">
+      <!-- <i class="fas fa-bars"></i> -->
+    </label>
+    
+
+    <!-- 내비게이션 -->
+      <nav class="gnb">
+
+        <!-- 리스트 -->
+          <!-- 닫기 버튼 -->
+            <label for="c_toggle" class="c_btn">
+              <img src="./h_close.png" alt="닫기버튼">
+              <!-- <i class="fas fa-close"></i> -->
+            </label>
+        <ul>
+          <li><!-- 0. 프로필-->
+
+            <div class="prf">
+              <!-- 알림 아이콘 -->
+              <a href="#" title="알림창 바로가기">
+                <img src="./h_bell.png" alt="알림아이콘" class="bell_icon">
+                <!-- <i class="fas fa-bell"></i> -->
+              </a>
+
+              <img src="./cat_img.png" alt= "">
+
+              <p class="ng_nim">정그린 <span class="n_nim">님</span>
+              <br>
+              <input type="button" value="내 페이지 보기"></p>
+            </div>
+          </li>
+
+          <li> <!-- 1. 지역별 전시회 -->
+            <label for="sub01">지역별 전시회<img src="./h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub01">
+
+              <ul class="sub">
+                <li><a href="#" title="지도로 보는 지역별 전시회">지도로 보는 지역별 전시회</a></li>
+              </ul> 
+          </li>
+
+          <li> <!-- 2. 전시회 행사 -->
+            <label for="sub02">전시회 행사<img src="./h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub02">
+
+              <ul class="sub">
+                <li><a href="#" title="지역별">지역별</a></li>
+                <li><a href="#" title="비용별">비용별</a></li>
+                <li><a href="#" title="취향별">취향별</a></li>
+              </ul>
+          </li>
+
+          <li><!-- 3. 추천코스 -->
+            <label for="sub03">추천코스<img src="./h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub03">
+
+              <ul class="sub">
+                <li><a href="#" title="미디어아트">미디어아트</a></li>
+                <li><a href="#" title="현대미술">현대미술</a></li>
+                </ul>
+          </li>
+
+          <li><!-- 4. 취향별 전시회 -->
+            <label for="sub04">취향별 전시회<img src="./h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub04">
+
+            <ul class="sub">
+              <li><a href="#" title="신비로움">신비로움</a></li>
+              <li><a href="#" title="신선함">신선함</a></li>
+              <li><a href="#" title="거장들">거장들</a></li>
+              <li><a href="#" title="미디어아트">미디어아트</a></li>
+              <li><a href="#" title="예술가의 이야기">예술가의 이야기</a></li>
+              <li><a href="#" title="동물">동물</a></li>
+              <li><a href="#" title="프랑스">프랑스</a></li>
+              <li><a href="#" title="감정">감정</a></li>
+              <li><a href="#" title="캐릭터">캐릭터</a></li>
+            </ul> 
+          </li>
+
+          <li class="lojo"><!-- 5. 로그인 -->
+            <label><a href="../photo+html/mlogin.html">로그인</a></label>
+          </li>
+
+          <li class="lojo"><!-- 6. 회원가입 -->
+            <label>
+            <a href="../photo+html/mjoin.html">회원가입</a>
+            </label>
+          </li>
+          <!-- <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i> -->
+
+          <li>
+            <img src="./h_facebook.png" alt="페이스북" class="sns_icon facebook">
+            <img src="./h_instagram.png" alt="인스타그램" class="sns_icon instagram">
+            <img src="./h_youtube.png" alt="유튜브" class="sns_icon youtube">
+          </li>
+        </ul>
+      </nav>
+  </header>
+
+  <!-- ~~~~~ 회원가입 메인 ~~~~~ -->
+  <main>
+    <article class="lo_img">
+      <h2>환영합니다</h2>
+      <p>
+        <span class="lo_txt">
+        엑시빗뮤지엄에서 서울에 위치한 미술관 &#x00B7; 갤러리의 정보를 둘러보세요.
+      </span>
+    </p>
+    </article>
+
+    <!-- 회원가입 -->
+    <form action="login" method="post" class="box_wrap">
+      <fieldset class="b01">
+        <legend>회원가입</legend>
+
+          <!-- 뒤로가기 아이콘 -->
+          <a href="../photo+html/mindex.html"><img src="./h_back_arrow.png" alt="뒤로가기" class="bck_icon"></a>
+          <!-- <i class="fas fa-arrow-left"></i> -->
+        </a>
+        
+        <table>
+          <tr>
+            <td class="name">
+              <label for="name_txt">닉네임</label>
+
+              <input type="text" placeholder="닉네임을 입력해주세요" id="name_txt" required>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="emil">
+              <label for="emil_txt">이메일</label>
+
+              <input type="text" placeholder="이메일을 입력해주세요" id="emil_txt" required>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="pw_txt">비밀번호</label>
+
+              <input type="text" placeholder="비밀번호를 입력해주세요" id="pw_txt" required>
+            </td>
+          </tr>
+
+          <tr>
+            <td>
+              <label for="pwre_txt">비밀번호 확인</label>
+
+              <input type="text" placeholder="비밀번호를 다시 입력해주세요" id="pwre_txt" required>
+            </td>
+          </tr>
+
+          <tr>
+            <td class="join_btn">
+              <input type="submit" value="회원가입"></td>
+          </tr>
+        </table>
+      </fieldset>
+      </form>
+    </main>
+
+  
+  <!-- ~~~~~ 푸터 ~~~~~ -->
+  <footer>
+    <div class="f_inner">
+    <h2><a href="mindex.html" title="하단로고"><img src="logo_fff.svg" alt="하단로고"></a></h2>
+    <nav class="sns"><a href="#" title="페북"><img src="facebook-logo2.png" alt="페북"></a>
+    <a href="#" title="인스타"><img src="instagram-icon2.png" alt="인스타" ></a>
+    <a href="#" title="유튜브"><img src="youtube-icon2.png" alt="유튜브" class="youtube_m"></a></nav>
+    
+    <nav class="f_navi">
+    <a href="#" title="엑시빗뮤지엄">엑시빗뮤지엄</a>
+    <a href="#" title="이메일수집거부">이메일수집거부</a>
+    <a href="#" title="개인정보처리방침">개인정보처리방침</a>
+    <a href="#" title="공지사항">공지사항</a>
+    </nav>
+    <address class="flex">
+    
+    <p class="pc"><a href="index.html?move_pc_screen=2" title="PC버전보기">PC버전보기</a></p>
+    
+    <ul class="map_m">
+    <li><img src="maps2.png" alt="주소" class="map_icon"><span class="font_size font_size2">오시는 길</span></li>
+    <li><span class="font_size font_size3">서울특별시 종로구 수표로 45</span></li>
+    </ul>
+    <ul class="phone">
+    <li><img src="phone-call2.png" alt="전화번호" class="phone_icon"><span class="phone_icon02">문의전화</span></li>
+    <li><span class="phone_n" >02-5458-4837</span></li>
+    </ul>
+    </address>
+    <p class="copyright font_size">Copyright&#x24D2;2023 ExhibitMuseum All Rights Reserved</p>
+    </div>
+    </footer>
+  </body>
+</html>

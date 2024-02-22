@@ -1,0 +1,138 @@
+@charset "utf-8";
+
+/* ~~~~ login페이지 메인 레이아웃 ~~~~ */
+
+article{padding-top: 52px;}
+
+.lo_img{
+  width: 1280px;
+  height: 200px;
+  margin: 0px auto;
+  background-image: url('../images/wellcome.jpg');
+  background-size: 100%;
+  background-position: 0px -150px;
+
+  color: #fff;
+  font-size: 25px;
+  text-align: center;
+  line-height: 100px;
+}
+
+.log_text{padding: 25px;}
+
+.lo_img > h2::after{
+  display: block;
+  content: "";
+  margin: 0px auto;
+  width: 250px;
+  border-bottom: 1px solid #fff;
+  position: relative;
+}
+
+.lo_txt{font-size: 25px;}
+
+
+/* 로그인 */
+.box_wrap{
+  width: 750px;
+  display: flex;
+  margin: 60px auto;
+  justify-content: space-evenly;
+}
+
+.b01{
+  width: 250px;
+  height: 320px;
+}
+
+.b01 > h2, .b02 > h2{
+  font-size: 22px;
+  margin: 0px 0px;
+  font-weight: 500;
+}
+
+.id_line{color: #acacac;}
+
+.b02{width: 250px;}
+
+legend{
+  font-size: 22px;
+}
+
+form{
+  text-align: center;
+  line-height: 60px;
+}
+
+.b01 input[type=submit]{
+  width: 209px;
+  height: 37px;
+  font-size: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  background: #DF7DAF;
+  
+}
+
+.b01::after{
+  display:block;
+  width: 1px;
+  height: 250px;
+  position: relative;
+  top: -270px;
+  right: -290px;
+  content: "";
+  background-color: #ccc;
+}
+
+
+.name, .eamil{text-align:right;}
+
+label{font-size: 14px;
+padding: 3px;}
+
+#emil_txt, #pw_txt{
+  width: 170px;
+  height: 36px;
+  border: 1px solid #a1a1a1;
+  border-radius: 5px;
+}
+#emil_txt{width: 180px;}
+
+.id_pw{line-height: 50px;}
+
+.b02 a{
+  width: 209px;
+  height: 37px;
+  font-size: 12px;
+  padding-top: 8px;
+}
+
+.b02{
+  width: 250px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: repeat(3,auto);
+}
+
+.b02 > ul > .naver_btn, .b02 > ul > .kakao_btn, .b02 > ul > .google_btn{
+  margin: 0px auto;
+  width: 209px;
+  height: 40px;
+  display: flex;
+  line-height: 0px;
+  margin-bottom: 30px;
+  justify-content: space-around;
+  border-radius: 10px;
+}
+
+.b02 img{
+  width: 24px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+.b02 > ul > .naver_btn{background: #90E489;}
+.b02 > ul > .kakao_btn{background: #FFF27A;}
+.b02 > ul > .google_btn{background: #f1f1f1;}

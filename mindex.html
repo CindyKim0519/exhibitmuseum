@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>엑시빗뮤지엄-모바일-메인</title>
+  
+  
+  <!-- 파비콘 이미지 삽입하기 -->
+  <link rel="shortcut icon" href="./images/favitcon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+  <link rel="stylesheet" href="./css/m_layout.css" type="text/css">
+  <link rel="stylesheet" href="./css/m_main.css" type="text/css">
+  <link href="./css/m_main2.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./css/swiper.css" type="text/css">
+  <!-- swiper 제이쿼리 스크립트 연결하기 -->
+<script src="./script/swiper.js"></script>
+
+</head>
+<body>
+    <!-- ~~~~~ 헤더 ~~~~~ -->
+  <header>
+    <!-- 로고 -->
+    <h1>
+      <a href="./mindex.html" title="메인페이지로 바로가기"><img src="./images/logo.svg" alt="상단로고"></a>
+    </h1>
+    
+
+    <!-- 검색 아이콘 -->
+    <input type="checkbox" id="s_toggle">
+    <label for="s_toggle" class="s_btn">
+      <img src="./images/h_search.png" alt="검색아이콘">
+      <!-- <i class="fas fa-search"></i> -->
+    </label>
+
+    
+    <div class="srh">
+      <ul>
+        <li>
+          <div class="srh_b">
+          <!-- 검색_닫기버튼 -->
+          <label for="s_toggle" class="c_s_btn">
+            <img src="./images/h_close_search_icon.png" alt="닫기아이콘">
+            <!-- <i class="fas fa-close"></i> -->
+          </label>
+            <input type="text" placeholder="검색어를 입력해주세요">
+            <input type="submit" value="검색">
+  
+            <div class="srh_text">
+              <a href="#" title="전시회">#전시회</a>
+              <a href="#" title="미디어아트">#미디어아트</a>
+              <a href="#" title="무료전시">#무료 전시</a>
+              <a href="#" title="요시다유니">#요시다유니</a>
+            </div>
+          </div>
+        </li>
+  
+      </ul>
+    </div>
+
+
+    <!-- 햄버거 아이콘 -->
+    <input type="checkbox" id="c_toggle">
+    <label for="c_toggle" class="t_btn">
+      <img src="./images/h_menu.png" alt="메뉴">
+      <!-- <i class="fas fa-bars"></i> -->
+    </label>
+    
+
+    <!-- 내비게이션 -->
+      <nav class="gnb">
+
+        <!-- 리스트 -->
+          <!-- 닫기 버튼 -->
+            <label for="c_toggle" class="c_btn">
+              <img src="./images/h_close.png" alt="닫기버튼">
+              <!-- <i class="fas fa-close"></i> -->
+            </label>
+        <ul>
+          <li><!-- 0. 프로필-->
+
+            <div class="prf">
+              <!-- 알림 아이콘 -->
+              <a href="#" title="알림창 바로가기">
+                <img src="./images/h_bell.png" alt="알림아이콘" class="bell_icon">
+                <!-- <i class="fas fa-bell"></i> -->
+              </a>
+
+              <img src="./images/cat_img.png" alt= "">
+
+              <p class="ng_nim">정그린 <span class="n_nim">님</span>
+              <br>
+              <input type="button" value="내 페이지 보기"></p>
+            </div>
+          </li>
+
+          <li> <!-- 1. 지역별 전시회 -->
+            <label for="sub01">지역별 전시회<img src="./images/h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub01">
+
+              <ul class="sub">
+                <li><a href="#" title="지도로 보는 지역별 전시회">지도로 보는 지역별 전시회</a></li>
+              </ul> 
+          </li>
+
+          <li> <!-- 2. 전시회 행사 -->
+            <label for="sub02">전시회 행사<img src="./images/h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub02">
+
+              <ul class="sub">
+                <li><a href="#" title="지역별">지역별</a></li>
+                <li><a href="#" title="비용별">비용별</a></li>
+                <li><a href="#" title="취향별">취향별</a></li>
+              </ul>
+          </li>
+
+          <li><!-- 3. 추천코스 -->
+            <label for="sub03">추천코스<img src="./images/h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub03">
+
+              <ul class="sub">
+                <li><a href="#" title="미디어아트">미디어아트</a></li>
+                <li><a href="#" title="현대미술">현대미술</a></li>
+                </ul>
+          </li>
+
+          <li><!-- 4. 취향별 전시회 -->
+            <label for="sub04">취향별 전시회<img src="./images/h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub04">
+
+            <ul class="sub">
+              <li><a href="#" title="신비로움">신비로움</a></li>
+              <li><a href="#" title="신선함">신선함</a></li>
+              <li><a href="#" title="거장들">거장들</a></li>
+              <li><a href="#" title="미디어아트">미디어아트</a></li>
+              <li><a href="#" title="예술가의 이야기">예술가의 이야기</a></li>
+              <li><a href="#" title="동물">동물</a></li>
+              <li><a href="#" title="프랑스">프랑스</a></li>
+              <li><a href="#" title="감정">감정</a></li>
+              <li><a href="#" title="캐릭터">캐릭터</a></li>
+            </ul> 
+          </li>
+
+          <li class="lojo"><!-- 5. 로그인 -->
+            <label><a href="./mlogin.html">로그인</a></label>
+          </li>
+
+          <li class="lojo"><!-- 6. 회원가입 -->
+            <label>
+            <a href="./mjoin.html">회원가입</a>
+            </label>
+          </li>
+          <!-- <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i> -->
+
+          <li>
+            <img src="./images/h_facebook.png" alt="페이스북" class="sns_icon facebook">
+            <img src="./images/h_instagram.png" alt="인스타그램" class="sns_icon instagram">
+            <img src="./images/h_youtube.png" alt="유튜브" class="sns_icon youtube">
+          </li>
+        </ul>
+      </nav>
+  </header>
+
+    <main>
+      <div class="slide_p">
+      <article class="slide2">
+        <h2>slide2</h2>
+        <article class="slide">
+          <h2>slide</h2>
+        <article class="swiper mySwiper">
+          <h2>swiper</h2>
+          <div class="swiper-wrapper">
+          
+          <div class="swiper-slide">
+            <a href="#" title="슬라이드1"><img src="./images/slide05.png" alt="슬라이드1"></a>
+          </div>
+    
+          <div class="swiper-slide">
+            <a href="#" title="슬라이드2"><img src="./images/slide03.png" alt="슬라이드2"></a>
+          </div>
+    
+          <div class="swiper-slide">
+            <a href="#" title="슬라이드3"><img src="./images/slide04.png" alt="슬라이드3"></a>
+          </div>
+    
+          <div class="swiper-slide">
+            <a href="#" title="슬라이드3"><img src="./images/slide01.png" alt="슬라이드4"></a>
+          </div>
+    
+          <div class="swiper-slide">
+            <a href="#" title="슬라이드3"><img src="./images/slide02.png" alt="슬라이드5"></a>
+          </div>
+    
+        </div>
+      <div class="swiper-pagination">
+    
+      </div>
+      </article>
+      </article>
+      </article>
+    
+    
+      <div class="c_wrap">
+        <a href="#" title="자세히 보기" class="btn01">자세히 보기</a>
+      </div>
+    </div>
+      <article class="title_m">
+        <h2 class="txt_01">지도로 보는 지역별 전시회</h2>
+        <p class="btn_02">
+          <a href="#" title="확대"><img src="./images/plus-button.jpg" alt="확대 아이콘" class="btn05"></a>
+          <a href="#" title="축소"><img src="./images/minus-button.jpg" alt="축소 아이콘" class="btn05"></a></p>
+        </article>
+        
+        <article class="slide03">
+          <h2>slide03</h2>
+        </article>
+
+        <article class="art_tag">
+          <h2 class="txt_01">전시회 행사</h2>
+  
+          <p class="tag_select"><select name="region" id="region-select" class="filter01">
+            <option value="지역별 선택">지역별 선택</option>
+            <option value="강남구 ">강남구</option>
+            <option value="강동구 ">강동구</option>
+            <option value="강북구 ">강북구</option>
+            <option value="강서구 ">강서구</option>
+            <option value="관악구 ">관악구</option>
+            <option value="관진구 ">관진구</option>
+            <option value="구로구 ">구로구</option>
+            <option value="금천구">금천구</option>
+            <option value="노원구">노원구</option>
+            <option value="도봉구">도봉구</option>
+            <option value="동대문구">동대문구</option>
+            <option value="동작구">동작구</option>
+            <option value="마포구">마포구</option>
+            <option value="서대문구">서대문구</option>
+            <option value="서초구">서초구</option>
+            <option value="성동구">성동구</option>
+            <option value="성북구">성북구</option>
+            <option value="송파구">송파구</option>
+            <option value="양천구">양천구</option>
+            <option value="영등포구">영등포구</option>
+            <option value="용산구">용산구</option>
+            <option value="은평구">은평구</option>
+            <option value="종로구">종로구</option>
+            <option value="중구">중구</option>
+            <option value="중랑구 ">중랑구</option>
+          </select>
+        
+        <select name="price" id="price-select" class="filter01">
+          <option value="비용별 선택">비용별 선택</option>
+          <option value="무료">무료</option>
+          <option value="유료">유료</option>
+        </select>
+        
+        <select name="preference" id="preference-select" class="filter01">
+          <option value="취향별 선택">취향별 선택</option>
+          <option value="신비로움">신비로움</option>
+          <option value="신선함">신선함</option>
+          <option value="거장들">거장들</option>
+          <option value="미디어아트">미디어아트</option>
+          <option value="예술가의 이야기">예술가의 이야기</option>
+          <option value="동물">동물</option>
+          <option value="프랑스">프랑스</option>
+          <option value="감정">감정</option>
+          <option value="캐릭터">캐릭터</option>
+          <option value="전통적">정통적</option>
+          <option value="사랑">사랑</option>
+          <option value="동화">동화</option>
+        </select>
+     
+        <input type="button" value="검색" class="search">
+        </p>
+        </article>
+
+        <article class="a_grid01">
+          <h2>전시회행사</h2>
+        <ul class="grid01">
+          <li>
+            <a href="./m_subpage1.html" title="요시다 유니:Alchemy">
+            <img src="./images/art12.png" alt="요시다 유니:Alchemy" class="photo"></a>
+  
+          <p><span class="s_tag01">#신비로움</span>
+            <a href="./m_subpage1.html" title="상세페이지 가기" class="btn03">
+              <img src="./images/long_right_arrow.png" alt="오른쪽 화살표">
+            </a>
+          </p>
+          <p class="a_title01">요시다 유니:Alchemy</p>
+
+          <div class="detail w01">
+            <ul>
+              <li>
+                <img src="./images/maps.png" alt="위치" class="icon01"><span class="location1">서울시 종로구 창의문로11길 4-1석파정 서울미술관</span>
+              </li>
+              <li><img src="./images/clock.png" alt="기간" class="icon02 icon03"><span class="location2">2023.05.24&#x007E;<span class="date_d">2023.09.24</span></span></li>
+            </ul>
+        </div>
+        </ul>
+          
+        <ul class="grid01">
+          <li>
+            <a href="#" title="제우스:룸 711"><img src="./images/art2.jpg" alt="제우스:룸 711" class="photo"></a>
+            <p>
+              <span class="s_tag01">#신선함</span>  
+                <a href="#" title="상세페이지 가기" class="btn03"><img src="./images/long_right_arrow.png" alt="오른쪽 화살표" ></a>
+            </p>
+            <p class="a_title01">제우스:룸 711</p>
+
+            <div class="detail w01">
+              <ul>
+                <li>
+            <img src="./images/maps.png" alt="위치" class="icon01"><span class="location1">서울시 서초구 남부순환로 2406 예술의 전당 한가람 미술관 제3전시실,제4전시실</span>
+                </li>
+                <li><img src="./images/clock.png" alt="기간" class="icon02"><span class="location2">2023.04.14&#x007E;<span class="date_d">2023.07.06</span></span></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+
+      <ul class="grid01">
+          <li>
+            <a href="#" title="피카소와 20세기 거장들">
+              <img src="./images/art3.gif" alt="피카소와 20세기 거장들" class="photo">
+            </a>
+            <p>
+              <span class="s_tag01">#거장들</span>
+                <a href="#" title="상세페이지 가기" class="btn03">
+                  <img src="./images/long_right_arrow.png" alt="오른쪽 화살표">
+                </a>
+            </p>
+            <p class="a_title01">피카소와 20세기 거장들</p>
+  <div class="detail">
+    <ul>
+    <li>
+      <img src="./images/maps.png" alt="위치" class="icon01"><span class="location1">서울시 강남구 테헤란로 518 섬유센터빌딩 지하 1층 마이아트뮤지엄</span>
+            </li>
+            <li><img src="./images/clock.png" alt="기간" class="icon02"><span class="location2">2023.03.24&#x007E;<span class="date_d">2023.08.27</span></span></li>
+          </ul>
+      </div>
+      </ul>  
+    </article>
+
+    <p class="btn_m btn04 "><a href="#" title="더보기" >더보기<img src="./images/right-arrow2.png" alt="더보기"></a></p>
+
+
+
+
+    <article>
+    <div class="rec_m">
+      <h2 class="txt_01 ">추천코스</h2>
+      <div class="recommendation">
+        <h3 class="txt_03">미디어 아트 감상하기</h3>
+        <a href="#" title="왼쪽 아이콘" class="left_arrow"><img src="./images/left-arrow1.png" alt="왼쪽 아이콘"></a>
+        <a href="#" title="오른쪽 아이콘" class="right_arrow"><img src="./images/right-arrow1.png" alt="오른쪽 아이콘"></a>
+      </div>
+    
+  <ul class="scroll">
+    <li>
+      <a href="#" title="에곤실레와 클림트"><img src="./images/art1.png" alt="에곤실레와 클림트" class="a_img1"></a>
+  
+      <p class="a_text01">에곤실레와 클림트 <a href="#"><img src="./images/long_right_arrow.png" alt="오른쪽 화살표"></a>
+      </p>
+      <p class="a_text05">오스트리아의 화가 에곤실레. 미디어아트전으로 영상들과 포토존까지....</p>
+
+      <p  class="a_text06"> <span class="icons01 icons02"><img src="./images/bookmark.png" alt="북마크아이콘"></span>
+        <span class="icons01"><img src="./images/heart.png" alt="하트아이콘"></span>
+        <span class="like">145</span>
+      </p>
+    </li> 
+    <li>
+      <a href="#" title="알폰스 무하 더 골든 에이지"><img src="./images/art2.png" alt="알폰스 무하 더 골든 에이지" class="a_img1"></a>
+      <p class="a_text01">알폰스 무하 더 골든 에이지 <a href="#">
+      <img src="./images/long_right_arrow.png" alt="오른쪽 화살표"></a></p>
+      <p class="a_text05">아르누보의 거장 알폰스 무하는 체코의 화가이다. 그의 인생 그리고 명장...</p>
+      <p  class="a_text06">
+      <span class="icons01 icons02"><img src="./images/bookmark.png" alt="북마크아이콘"></span>
+      <span class="icons01"><img src="./images/heart.png" alt="하트아이콘"></span>
+      <span class="like">130</span></p>
+    </li> 
+    <li>
+      <a href="#" title="피터팬의 첫사랑"><img src="./images/art5.png" alt="피터팬의 첫사랑" class="a_img1"></a>
+      <p class="a_text01">피터팬의 첫사랑展
+        <a href="#"><img src="./images/long_right_arrow.png" alt="오른쪽 화살표" ></a></p>
+      <p class="a_text05">피터팬과 함께하는 우리 모두의 달콤한 첫 사랑의 기억을 찾는 여행...</p>
+      <p  class="a_text06">
+      <span class="icons01 icons02"><img src="./images/bookmark.png" alt="북마크아이콘"></span>
+      <span class="icons01"><img src="./images/heart.png" alt="하트아이콘"></span>
+      <span class="like">257</span></p>
+    </li> 
+    <li>
+      <a href="#" title="환혼:빛과 그림자"><img src="./images/art3.png" alt="환혼:빛과 그림자" class="a_img1"></a>
+      <p class="a_text01">환혼:빛과 그림자
+        <a href="#"><img src="./images/long_right_arrow.png" alt="오른쪽 화살표"></a></p>
+      <p class="a_text05">동명의 원작 드라마를 주제로 한 미디어아트 전시...</p>
+      <p  class="a_text06">
+      <span class="icons01 icons02"><img src="./images/bookmark.png" alt="북마크아이콘"></span>
+      <span class="icons01"><img src="./images/heart.png" alt="하트아이콘"></span>
+      <span class="like">53</span></p>
+    </li>  
+  </ul>
+</div>
+</article>
+    
+
+      <p class="btn04"><a href="#" title="더보기" >더보기<img src="./images/right-arrow2.png" alt="더보기"></a></p>
+      <article class="tag_m">
+        <h2 class="txt_01">취향대로 전시회 즐기기</h2>
+        <ul class="tag">
+            <li class="tag_s"><a href="#" title="신비로움">#신비로움</a></li>
+            <li class="tag_s"><a href="#" title="신선함">#신선함</a></li>
+            <li><a href="#" title="거장들">#거장들</a></li>
+            <li class="tag_s"><a href="#" title="미디어아트">#미디어아트</a></li>
+            <li class="tag_s"><a href="#" title="예술가의 이야기">#예술가의 이야기</a></li>
+            <li><a href="#" title="동물">#동물</a></li>
+            <li class="tag_s"><a href="#" title="프랑스">#프랑스</a></li>
+            <li class="tag_s"><a href="#" title="감정" >#감정</a></li>
+            <li><a href="#" title="캐릭터">#캐릭터</a></li>
+            <li class="tag_s"><a href="#" title="전통적">#전통적</a></li>
+            <li class="tag_s"><a href="#" title="사랑">#사랑</a></li>
+            <li><a href="#" title="동화">#동화</a></li>
+        </ul>
+      </article>
+      
+      <article class="artwork">
+        <h2>artwork</h2>
+        
+        <ul class="artwork1">
+          <li>
+            <div class="arrow_i"><a href="#" title="달리:끝없는 수수께끼"><img src="./images/art7.png" alt="달리:끝없는 수수께끼" class="a_img2"></a>
+            <p class="a_text03"><span class="word">달리:끝없는</span><span>수수께끼</span>
+                <a href="#" title="해당페이지로 이동하기"><img src="./images/long_right_arrow.png" alt="오른쪽 화살표" class="arrow"></a></p></div>
+                <p class="a_text02">달리의 탄색 119주년을 기념 하며 그의 작품들을...</p>
+                <div class="i01">
+                <span class="icons01 icons02"><img src="./images/bookmark.png" alt="북마크아이콘"></span>
+                <span class="icons01"><img src="./images/heart.png" alt="하트아이콘"></span>
+                <span class="like">167</span></div>
+          </li> 
+          <li>
+            <a href="#" title="모네 인사이드"><img src="./images/art8.png" alt="모네 인사이드" class="a_img2"></a>
+                <p class="a_text03"><span class="monet">모네 인사이드</span>
+                  <a href="#" title="해당페이지로 이동하기"><img src="./images/long_right_arrow.png" alt="오른쪽 화살표" class="arrow"></a></p>
+                <p class="a_text02">모네가 남긴 소중한 명작들을 재해석한 미디어아트 전시...</p>
+                <p class="i01">
+                <span class="icons01 icons02"><img src="./images/bookmark.png" alt="북마크아이콘"></span>
+                <span class="icons01"><img src="./images/heart.png" alt="하트아이콘"></span>
+                <span class="like">203</span></p>
+          </li> 
+          </ul>
+        <ul class="artwork2">
+          <li>
+            <a href="#" title="반고흐 인 서울"><img src="./images/art9.png" alt="반고흐 인 서울" class="a_img2"></a>
+                <p class="a_text03"> <span class="monet">반고흐 인 서울</span>
+                  <a href="#" title="해당페이지로 이동하기"><img src="./images/long_right_arrow.png" alt="오른쪽 화살표" class="arrow"></a></p>
+                <p class="a_text02">예술가 빈센트 반고흐의 이야기를 재해석한 전시다...</p>
+                <p class="i01">
+                <span class="icons01 icons02"><img src="./images/bookmark.png" alt="북마크아이콘"></span>
+                <span class="icons01"><img src="./images/heart.png" alt="하트아이콘"></span>
+                <span class="like">332</span></p>
+          </li> 
+            <li>
+              <a href="#" title="알폰즈 무하: 더 골든 에이지"><img src="./images/art2.png" alt="알폰즈 무하: 더 골든 에이지" class="a_img2"></a>
+                  <p class="a_text03"> <span class="word">알폰즈 무하:</span><span>더 골든 에이지</span>
+                    <a href="#" title="해당페이지로 이동하기"><img src="./images/long_right_arrow.png" alt="오른쪽 화살표" class="arrow"></a></p>
+                  <p class="a_text02">아르누보의 거장 알폰스 무하의 인생과 명자들을 영화...</p>
+                  <p class="i01">
+                  <span class="icons01 icons02"><img src="./images/bookmark.png" alt="북마크아이콘"></span>
+                  <span class="icons01"><img src="./images/heart.png" alt="하트아이콘"></span>
+                  <span class="like">198</span></p>
+            </li> 
+          </ul>
+          <p class="btn04 btn06"><a href="#" title="더보기" >더보기<img src="./images/right-arrow2.png" alt="더보기"></a></p>
+      </article>
+    </main>
+
+<footer>
+<div class="f_inner">
+<h2><a href="./mindex.html" title="하단로고"><img src="./images/logo_fff.svg" alt="하단로고"></a></h2>
+<nav class="sns"><a href="#" title="페북"><img src="./images/facebook-logo2.png" alt="페북"></a>
+<a href="#" title="인스타"><img src="./images/instagram-icon2.png" alt="인스타" ></a>
+<a href="#" title="유튜브"><img src="./images/youtube-icon2.png" alt="유튜브" class="youtube_m"></a></nav>
+
+<nav class="f_navi">
+<a href="#" title="엑시빗뮤지엄">엑시빗뮤지엄</a>
+<a href="#" title="이메일수집거부">이메일수집거부</a>
+<a href="#" title="개인정보처리방침">개인정보처리방침</a>
+<a href="#" title="공지사항">공지사항</a>
+</nav>
+<address class="flex">
+
+<p class="pc"><a href="index.html?move_pc_screen=2" title="PC버전보기">PC버전보기</a></p>
+
+<ul class="map_m">
+<li><img src="./images/maps2.png" alt="주소" class="map_icon"><span class="font_size font_size2">오시는 길</span></li>
+<li><span class="font_size font_size3">서울특별시 종로구 수표로 45</span></li>
+</ul>
+<ul class="phone">
+<li><img src="./images/phone-call2.png" alt="전화번호" class="phone_icon"><span class="phone_icon02">문의전화</span></li>
+<li><span class="phone_n" >02-5458-4837</span></li>
+</ul>
+</address>
+<p class="copyright font_size">Copyright&#x24D2;2023 ExhibitMuseum All Rights Reserved</p>
+</div>
+</footer>
+
+<script>
+var swiper = new Swiper(".mySwiper", {
+  spaceBetween: 0,
+  effect: "fade", /*페이드아웃, 페이드인효과 */
+  /*effect:'slide' 좌, 우 슬라이드*/ 
+  centeredSlides: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+</script>
+    </body>
+</html>

@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>엑시빗뮤지엄-모바일-서브</title>
+
+  
+  <!-- 파비콘 이미지 삽입하기 -->
+  <link rel="shortcut icon" href="favitcon.ico" type="image/x-icon">
+
+
+  <!-- 1. 여백초기화 -->
+  <link rel="stylesheet" href="../css/reset.css" type="text/css">
+
+  <!-- 2. 공통서식(메인, 서브, 로그인, 회원가입) -->
+  <link rel="stylesheet" href="../css/common.css" type="text/css">
+
+  <!-- 3. 레이아웃 -->
+  <link rel="stylesheet" href="../css/m_layout.css" type="text/css">
+  
+  <!-- 4. 서브페이지 레이아웃 -->
+  <link rel="stylesheet" href="../css/m_sub1_layout.css" type="text/css"> 
+  
+
+  
+
+  
+</head>
+<body>
+    <!-- ~~~~~ 헤더 ~~~~~ -->
+  <header>
+    <!-- 로고 -->
+    <h1>
+      <a href="./mindex.html" title="메인페이지로 바로가기"><img src="./logo.svg" alt="상단로고"></a>
+    </h1>
+    
+    
+
+    <!-- 검색 아이콘 -->
+    <input type="checkbox" id="s_toggle">
+    <label for="s_toggle" class="s_btn">
+      <img src="./h_search.png" alt="검색아이콘">
+      <!-- <i class="fas fa-search"></i> -->
+    </label>
+
+    
+    <div class="srh">
+      <ul>
+        <li>
+          <div class="srh_b">
+          <!-- 검색_닫기버튼 -->
+          <label for="s_toggle" class="c_s_btn">
+            <img src="./h_close_search_icon.png" alt="닫기아이콘">
+            <!-- <i class="fas fa-close"></i> -->
+          </label>
+            <input type="text" placeholder="검색어를 입력해주세요">
+            <input type="submit" value="검색">
+  
+            <div class="srh_text">
+              <a href="#" title="전시회">#전시회</a>
+              <a href="#" title="미디어아트">#미디어아트</a>
+              <a href="#" title="무료전시">#무료 전시</a>
+              <a href="#" title="요시다유니">#요시다유니</a>
+            </div>
+          </div>
+        </li>
+  
+      </ul>
+    </div>
+
+
+    <!-- 햄버거 아이콘 -->
+    <input type="checkbox" id="c_toggle">
+    <label for="c_toggle" class="t_btn">
+      <img src="./h_menu.png" alt="메뉴">
+      <!-- <i class="fas fa-bars"></i> -->
+    </label>
+    
+
+    <!-- 내비게이션 -->
+      <nav class="gnb">
+
+        <!-- 리스트 -->
+          <!-- 닫기 버튼 -->
+            <label for="c_toggle" class="c_btn">
+              <img src="./h_close.png" alt="닫기버튼">
+              <!-- <i class="fas fa-close"></i> -->
+            </label>
+        <ul>
+          <li><!-- 0. 프로필-->
+
+            <div class="prf">
+              <!-- 알림 아이콘 -->
+              <a href="#" title="알림창 바로가기">
+                <img src="./h_bell.png" alt="알림아이콘" class="bell_icon">
+                <!-- <i class="fas fa-bell"></i> -->
+              </a>
+
+              <img src="./cat_img.png" alt= "">
+
+              <p class="ng_nim">정그린 <span class="n_nim">님</span>
+              <br>
+              <input type="button" value="내 페이지 보기"></p>
+            </div>
+          </li>
+
+          <li> <!-- 1. 지역별 전시회 -->
+            <label for="sub01">지역별 전시회<img src="./h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub01">
+
+              <ul class="sub">
+                <li><a href="#" title="지도로 보는 지역별 전시회">지도로 보는 지역별 전시회</a></li>
+              </ul> 
+          </li>
+
+          <li> <!-- 2. 전시회 행사 -->
+            <label for="sub02">전시회 행사<img src="./h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub02">
+
+              <ul class="sub">
+                <li><a href="#" title="지역별">지역별</a></li>
+                <li><a href="#" title="비용별">비용별</a></li>
+                <li><a href="#" title="취향별">취향별</a></li>
+              </ul>
+          </li>
+
+          <li><!-- 3. 추천코스 -->
+            <label for="sub03">추천코스<img src="./h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub03">
+
+              <ul class="sub">
+                <li><a href="#" title="미디어아트">미디어아트</a></li>
+                <li><a href="#" title="현대미술">현대미술</a></li>
+                </ul>
+          </li>
+
+          <li><!-- 4. 취향별 전시회 -->
+            <label for="sub04">취향별 전시회<img src="./h_down_angle.png" alt="아래화살표" class="angle_icon"><!--<i class="fas fa-angle-down"></i>--></label>
+            <input type="checkbox" id="sub04">
+
+            <ul class="sub">
+              <li><a href="#" title="신비로움">신비로움</a></li>
+              <li><a href="#" title="신선함">신선함</a></li>
+              <li><a href="#" title="거장들">거장들</a></li>
+              <li><a href="#" title="미디어아트">미디어아트</a></li>
+              <li><a href="#" title="예술가의 이야기">예술가의 이야기</a></li>
+              <li><a href="#" title="동물">동물</a></li>
+              <li><a href="#" title="프랑스">프랑스</a></li>
+              <li><a href="#" title="감정">감정</a></li>
+              <li><a href="#" title="캐릭터">캐릭터</a></li>
+            </ul> 
+          </li>
+
+          <li class="lojo"><!-- 5. 로그인 -->
+            <label><a href="mlogin.html">로그인</a></label>
+          </li>
+
+          <li class="lojo"><!-- 6. 회원가입 -->
+            <label>
+            <a href="mjoin.html">회원가입</a>
+            </label>
+          </li>
+          <!-- <i class="fab fa-facebook"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-youtube"></i> -->
+
+          <li>
+            <img src="./h_facebook.png" alt="페이스북" class="sns_icon facebook">
+            <img src="./h_instagram.png" alt="인스타그램" class="sns_icon instagram">
+            <img src="./h_youtube.png" alt="유튜브" class="sns_icon youtube">
+          </li>
+        </ul>
+      </nav>
+  </header>
+  <!-- 2. 메인콘텐츠영역 -->
+  <main class="mb">
+    <div class="tt">
+      <ul>
+        <!-- 3. 뒤로가기-->
+        <li><a href="./mindex.html"><img src="./h_back_arrow.png" alt="back" title="back"></a></li>
+        <li>전시회행사</li>
+      </ul>
+  
+      
+    </div>
+    <section class="m_con1">
+      <h2 class="h2_1">행사내용</h2>
+
+      <article class="banner1">
+        <h2 class="h2_1">요시다유나 배너사진</h2>
+      </article>
+
+      <ul>
+        <li class="m_con1_li1">
+          <strong>
+            &#x005B;서울미술관 기획전&#x005D;<br> 요시다 유니 : Alchemy
+          </strong>
+        </li>
+        
+        <li class="m_con1_li2">
+          <em>장소</em> 
+          <div>
+            서울시 종로구 창의문로 11길 4-1 석파정 서울미술관
+          </div>
+        </li>
+
+        <li class="m_con1_li3">
+          <em>기간</em>
+          <div>
+            2023-05-24 &#x007E; 2023-09-24
+          </div> 
+        </li>
+
+        <li class="m_con1_li4">
+          <em>시간</em>
+          <div>
+            오전 11시 &#x007E; 오후 8시
+          </div> 
+        </li>
+
+        <li class="m_con1_li5">
+          <em>요금</em>
+          <div>
+            <span>성인 : 20,000</span><br>
+            <span>소인 : 15,000</span><br>
+            <span>우대 및 할인 : 13,000</span>
+          </div>
+        </li>
+
+        <li class="m_con1_li6">
+          <em>문의</em>
+          <div>
+            exhibitmusium@gmail.com
+          </div>
+        </li>
+      </ul>
+    </section>
+    
+    <section class="m_con2">
+      <h2>m_con2</h2>
+      
+      <article class="art1">
+        <h2>m_con2_art1</h2>
+        <ul>
+
+          <li class="art1_li1">
+            <em>상세내역</em>
+          </li>
+          
+          <li class="art1_li2">
+            <em>
+              &#x005B;서울미술관 기획전&#x005D;
+              요시다유니 : Alchemy
+            </em>
+          </li>
+
+          <li>
+            2023년 기획전 &#x003C;YOSHIDA YUNI : Alchemy&#x003E; 는 전 세계를 무대로 패션브랜드, 잡지, 광고, 아티스트의 비주얼을 디렉팅하는 요시다 유니의 여정을 소개합니다. 다양한 실험을 통해 황금을 만들려 시도했던 고대의 연금술사들처럼 작가는 빛과 어둠, 유형과 무형 사이의 상호 작용을 세밀하게 조작하여 평범한 것을 비범한 것으로 ‘변환’시키고 원물의 형태를 재조합하여 아름답고 의미 있는 작품으로 ‘변형’합니다. 이번 전시에 최초로 공개되는 &#x003C;Playing Cards&#x003E;&#x0028;2023&#x0029; 연작을 포함해 230여점에 이르는 요시다 유니만의 독특하고 신비로운 예술의 장에서 다른 차원의 아름다움과 헤아릴 수 없는 즐거움을 경험하시길 바랍니다.
+          </li>
+
+          <li>
+            &#x203B;해당 행사 상세 정보는 상단의 ‘홈페이지 바로가기’에서 
+            참고 부탁드립니다.
+          </li>
+        </ul>
+        
+      </article>
+
+      <article class="art2">
+        <h2>m_con2_art2</h2>
+        <ul>
+          <li>
+            <strong>위치안내</strong>
+          </li>
+
+          <li>
+            지도사진(394x440)
+          </li>
+
+          <li>
+            <strong>교통편 안내</strong>
+          </li>
+
+          <li>
+            <dl>
+              <dt>지하철</dt>
+              <dd>1,2호선 시청역 2호선 을지로입구역 시청방면 지하철연결출구</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>버스</dt>
+                <dd>순환 > 504, 1711, 7016, 7022</dd>
+                <dd>지선 > 150, 402, 405, 501, 506</dd>
+                <dd>간선 > M4108, M5107, M5115</dd>
+            </dl>
+          </li>
+
+        </ul>
+
+        
+      </article>
+    </section>
+      
+    
+    <section class="m_con3">
+      <h2>m_con3</h2>
+      <article class="art3">
+        <h2>m_con3_art3</h2>
+
+        <div class="di1">
+          <div class="di2">
+            <a href="#" title="리뷰쓰기">리뷰쓰기</a>
+          </div>
+        </div>
+        
+        <ul>
+
+          <li>
+            <dl>
+              <dt><strong>리뷰</strong></dt>
+                <dd>평점</dd>
+                <dd>170명참여</dd>
+            </dl>
+          </li>
+
+          <li>
+            <span>기대이상이다.</span>
+            <span>100</span>
+          </li>
+          
+          <li>
+            <span>전반적으로 만족스러웠다.</span>
+            <span>40</span>
+          </li>
+
+          <li>
+            <span>전반적으로 아쉬웠다.</span>
+            <span>20</span>
+          </li>
+
+          <li>
+            <span>기대이하이다.</span>
+            <span>10</span>
+          </li>
+
+        </ul>  
+      </article>
+
+      <article class="art4">
+        <h2>m_con3_art4</h2>
+        <ul>
+          <li>
+            <dl>
+              <dt>
+                <span>50x50</span>
+                <span>XXXX</span>
+              </dt>
+              <dd>전시회에서의 첫인상은 매우 인상적이었습니다.
+                요시다 유니의 작품들은 다양한 재료와 텍스처를 
+                조합하여 독특한 형태를 만들어냈습니다. 
+                작품들은 섬세하고 아름다운 디테일을 가지고 있었으며, 
+                그 속에는 감성적인 메시지와 상상력이 담겨있었습니다.
+                
+                </dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>
+                <span>50x50</span>
+                <span>XXXX</span>
+              </dt>
+              <dd>작가의 색상 선택과 조명 활용은 전시회를 더욱 특별하게 만들었습니다. 강렬한 컬러 팔레트와 조명의 조합은 작품들에 생동감을 불어넣었고, 관람객들에게 시각적인 충격을 주었습니다. 특히, 작품들이 빛에 반사되어 변화하는 모습은 매우 멋졌습니다.</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>
+                <span>50x50</span>
+                <span>XXXX</span>
+              </dt>
+              <dd>요시다 유니의 작품들은 현실과 상상력을 융합시켜 독특한 이야기를 풀어낸 것 같았습니다. 작품들은 추상적이면서도 감성적인 메시지를 담고 있어, 관람객들에게 다양한 감정과 생각을 일깨워주었습니다. 작품을 감상하면서 자유로운 상상력을 발휘할 수 있었습니다.</dd>
+            </dl>
+          </li>
+
+          <li>
+            <dl>
+              <dt>
+                <span>50x50</span>
+                <span>XXXX</span>
+              </dt>
+              <dd>전시회는 작가의 예술적인 세계에 몰입할 수 있는 좋은 기회였습니다. 작품들이 전시공간에 조화롭게 배치되어 있었으며, 관람객들은 작가의 작품들을 둘러보며 독특한 경험을 할 수 있었습니다. 요시다 유니의 전시회는 예술을 사랑하는 이들에게 큰 만족감을 선사한 전시회였습니다.
+              </dd>
+            </dl>
+          </li>
+        </ul>
+      </article>
+      
+      <input type="checkbox" id="list" title="more">
+      <iframe src="../photo+html/m_iframe1.html"></iframe>
+
+
+      <article class="art5">
+        <h2>m_con3_art5</h2>
+          
+          <div class="div1">
+            <label for="list" title="more">더보기</label>
+          </div>
+          
+        
+
+
+        <div class="div2">
+          <a href="#" title="list">목록</a>
+
+        </div>
+      </article>
+
+    </section>
+
+    <div class="footer_"></div>
+  </main>
+    
+  <!-- ~~~~~ 푸터 ~~~~~ -->  
+  <footer>
+    <div class="f_inner">
+    <h2><a href="mindex.html" title="하단로고"><img src="logo_fff.svg" alt="하단로고"></a></h2>
+    <nav class="sns"><a href="#" title="페북"><img src="facebook-logo2.png" alt="페북"></a>
+    <a href="#" title="인스타"><img src="instagram-icon2.png" alt="인스타" ></a>
+    <a href="#" title="유튜브"><img src="youtube-icon2.png" alt="유튜브" class="youtube_m"></a></nav>
+    
+    <nav class="f_navi">
+    <a href="#" title="엑시빗뮤지엄">엑시빗뮤지엄</a>
+    <a href="#" title="이메일수집거부">이메일수집거부</a>
+    <a href="#" title="개인정보처리방침">개인정보처리방침</a>
+    <a href="#" title="공지사항">공지사항</a>
+    </nav>
+    <address class="flex">
+    
+    <p class="pc"><a href="index.html?move_pc_screen=2" title="PC버전보기">PC버전보기</a></p>
+    
+    <ul class="map_m">
+    <li><img src="maps2.png" alt="주소" class="map_icon"><span class="font_size font_size2">오시는 길</span></li>
+    <li><span class="font_size font_size3">서울특별시 종로구 수표로 45</span></li>
+    </ul>
+    <ul class="phone">
+    <li><img src="phone-call2.png" alt="전화번호" class="phone_icon"><span class="phone_icon02">문의전화</span></li>
+    <li><span class="phone_n" >02-5458-4837</span></li>
+    </ul>
+    </address>
+    <p class="copyright font_size">Copyright&#x24D2;2023 ExhibitMuseum All Rights Reserved</p>
+    </div>
+    </footer>
+  </body>
+</html>

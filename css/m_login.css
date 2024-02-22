@@ -1,0 +1,134 @@
+@charset "utf=8";
+
+/* ~~~~ m_login페이지 메인 레이아웃 ~~~~ */
+
+
+/* 환영합니다. */
+article{padding-top: 52px;}
+
+.lo_img{
+  width: 100%;
+  height: 100px;
+  background: url(../images/wellcome.jpg);
+  margin-top: 60px;
+  background-size: 100%;
+  background-position: 0px -150px;
+
+  color: #fff;
+  font-size: 15px;
+  text-align: center;
+  line-height: 200%;
+}
+
+.lo_img > h2::after{
+  display: block;
+  content: "";
+  margin: 0px auto;
+  width: 200px;
+  border-bottom: 1px solid #fff;
+  position: relative;
+  white-space: pre;
+}
+
+
+/* 로그인 */
+.box_wrap{
+  margin: 40px auto;
+  justify-content: space-evenly;
+}
+
+  /* 바탕 */
+.b01{
+  width: 100%;
+  height: 320px;
+}
+
+/* 로그인, 간편로그인 제목 */
+.b01 > h2, .b02 > h2{
+  font-size: 22px;
+  text-align: center;
+  position: relative;
+}
+
+/* 뒤로가기 아이콘 */
+.bck_icon{
+  position: absolute;
+  margin-left: 15px;
+  width: 20px; height: 20px;
+  top: 250px; left: 15px;
+}
+
+  /* 로그인 요소 묶음 */
+.b01 table{margin: 40px auto;}
+
+/* 로그인 입력란 이름 */
+.b01 tr > td >label{font-size: 16px;}
+
+/* 로그인 버튼 */
+.login_btn{
+  width: 100%; height: 40px;
+  background: #DF7DAF;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+/* 로그인 양식 사이간격 */
+.b01 tr > td{
+  text-align: center;
+  padding: 11px;
+}
+
+/* 이메일 비밀번호 입력란 */
+#emil_txt, #pw_txt{
+  padding-right: 40px;
+  height: 40px;
+  border: 1px solid#aaa;
+  border-radius: 5px;
+  outline: none;
+}
+
+
+
+/* 간편로그인 */
+
+  /* 바탕 */
+.b02{
+  width: 100%;
+  margin: 90px auto;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-rows: repeat(3,auto);
+}
+
+
+/* 간편로그인 요소 묶음 */
+.b02 ul{
+  text-align: center;
+  margin: 0px auto;
+  width: 270px;
+}
+
+/* 네모까지 */
+.b02 ul > li{
+  margin: 10px;
+  border-radius: 50px;
+}
+
+/* sns 내용 */
+.b02 ul > li > a{
+  display: block;
+  padding: 10px;
+}
+
+.b02 img{
+  width: 24px;
+  padding-right: 5px;
+  vertical-align: middle;
+}
+
+
+.b02 > ul > .naver_btn{background: #90E489;}
+.b02 > ul > .kakao_btn{background: #FFF27A;}
+.b02 > ul > .google_btn{background: #f1f1f1;}

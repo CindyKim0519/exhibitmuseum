@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+@media screen and (max-width:389px){
+  .grid01>li .photo{
+    width:45%;
+    height:269px;
+  }
+  .grid01>li p {
+    width:55%;
+  height:60px;
+line-height:25px;}
+  .detail{
+    width:55%;
+    height:147px;
+    position:relative;
+  }
+  .icon01{
+    padding-bottom:50px;
+  }
+  .icon02{
+    padding-bottom:30px;
+  }
+  .location2{
+    float:right;
+    position:absolute;
+    right:30px;
+  }
+ .icon01,.icon02{
+  padding-right:1px;
+ }
+.date_d{
+  display:block;
+}
+  .monet{
+    position:absolute;
+    left:3%;
+    white-space:nowrap;
+    top:25%;
+  }
+
+  .icon03{position:absolute;
+  left:10px;}
+  .tag{width:234px;}
+
+}

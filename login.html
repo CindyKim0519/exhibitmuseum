@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>엑시빗뮤지엄-pc-로그인</title>
+  
+  
+  <!-- 파비콘 이미지 삽입하기 -->
+  <link rel="shortcut icon" href="./images/favitcon.ico" type="image/x-icon">
+
+
+  <!-- 1. 여백초기화 -->
+  <link rel="stylesheet" href="./css/reset.css" type="text/css">
+
+  <!-- 2. 공통서식(메인, 서브, 로그인, 회원가입) -->
+  <link rel="stylesheet" href="./css/common.css" type="text/css">
+
+  <!-- 3. 레이아웃 -->
+  <link rel="stylesheet" href="./css/layout.css" type="text/css">
+
+  <!-- 4. 로그인 레이아웃-->
+  <link rel="stylesheet" href="./css/login.css" type="text/css">
+
+</head>
+<body>
+
+<!--헤더-->
+<header>
+  <!-- 로고 -->
+  <div class="h-inner">
+    <div class="h_top">
+      <h1><a href="index.html" title="상단로고"><img src="./images/logo.svg" alt="상단로고"></a></h1>
+    </div>
+
+    <!--검색-->
+    <div class="search-box">
+      <input type="text" class="search-txt" name=""placeholder="검색어를 입력해주세요">
+      <a class="search-btn" href="#" title="검색">
+        <img src="./images/search.png" alt="검색">
+      </a>
+    </div>
+
+    <!-- 내비게이션 -->
+    <div class="navi_wrap">
+    <nav class="gnb">
+      <ul>
+        <li class="log_pw"><a href="./login.html" title="로그인">LOGIN</a>
+        </li>
+    
+        <li class="log_pw"><a href="./join.html" title="회원가입">JOIN</a>
+        </li>
+
+        <li><a href="#" title="지역별 전시회">지역별 전시회</a>
+          <ul class="sub">
+            <li><a href="#" title="지도로 보는 전시회">지도로 보는 전시회</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" title="전시회 행사">전시회 행사</a>
+          <ul class="sub">
+            <li><a href="#" title="지역별">지역별</a></li>
+            <li><a href="#" title="비용별">비용별</a></li>
+            <li><a href="#" title="취향별">취향별</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" title="추천코스">추천코스</a>
+          <ul class="sub">
+            <li><a href="#" title="미디어아트">미디어아트</a></li>
+            <li><a href="#" title="현대미술">현대미술</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" title="취향별 전시회">취향별 전시회</a>
+          <ul class="sub">
+            <li><a href="#" title="신비로움">신비로움</a></li>
+            <li><a href="#" title="신선함">신선함</a></li>
+            <li><a href="#" title="거장들">거장들</a></li>
+            <li><a href="#" title="미디어아트">미디어아트</a></li>
+            <li><a href="#" title="예술가의 이야기">예술가의 이야기</a></li>
+            <li><a href="#" title="동물">동물</a></li>
+            <li><a href="#" title="프랑스">프랑스</a></li>
+            <li><a href="#" title="감정">감정</a></li>
+            <li><a href="#" title="캐릭터">캐릭터</a></li>
+            <li><a href="#" title="전통적">전통적</a></li>
+            <li><a href="#" title="사랑">사랑</a></li>
+            <li><a href="#" title="동화">동화</a></li>
+          </ul>
+        </li>
+
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<!-- 메인 -->
+<main>
+  <article class="lo_img">
+    <h2 class="logtext01">환영합니다</h2>
+    <p>
+      <span class="lo_txt">
+      엑시빗뮤지엄에서 서울에 위치한 미술관 &#x00B7; 갤러리의 정보를 둘러보세요.
+    </span>
+  </p>
+  </article>
+
+  <!-- 로그인 -->
+  <form action="login" method="post" class="box_wrap">
+    <section class="b01">
+      <h2>로그인</h2>
+      <table class="space">
+        <tr>
+          <td class="emil">
+            <label for="emil_txt">이메일</label>
+
+            <input type="text" placeholder="이메일을 입력해주세요" id="emil_txt" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="pw_txt">비밀번호</label>
+
+            <input type="text" placeholder="비밀번호를 입력해주세요" id="pw_txt" required>
+          </td>
+        </tr>
+
+        <tr>
+          <td class="id_pw">
+            <a href="#" title="아이디찾기">아이디 찾기</a>
+            <span class="id_line">&#x007C;</span>
+            <a href="#" title="비밀번호 찾기">비밀번호 찾기</a>
+            <span class="id_line">&#x007C;</span>
+            <a href="./join.html" title="비밀번호 찾기"><span class="id_jo">회원가입</span></a>
+          </td>
+        </tr>
+
+        <tr>
+          <td><input type="submit" value="로그인" class="login_btn"></td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- ~~~ 간편 로그인 ~~~ -->
+    <section class="b02">
+      <h2>간편 로그인</h2>
+      <ul>
+        <li class="naver_btn">
+          <a href="#" title="네이버 로그인">
+            <img src="./images/icon_naver.png" alt=""> 네이버 로그인
+          </a>
+        </li>
+
+        <li class="kakao_btn">
+          <a href="#" title="카카오 로그인">
+            <img src="./images/icon_kakao.png" alt=""> 카카오 로그인
+          </a>
+        </li>
+
+        <li class="google_btn">
+          <a href="#" title="구글 로그인">
+            <img src="./images/icon_google.png" alt=""> 구글 로그인
+          </a>
+        </li>
+      </ul>      </section>
+  </form>
+
+</main>
+
+
+
+
+  <!-- 푸터 -->
+  <footer>
+    <div class="f_inner">
+    <h2><a href="index.html"><img src="./images/logo_fff.svg" alt="하단로고"></a></h2>
+    <nav class="sns"><a href="#" ><img src="./images/facebook-logo2.png" alt="페북"></a>
+    <a href="#" ><img src="./images/instagram-icon2.png" alt="인스타"></a>
+    <a href="#" ><img src="./images/youtube-icon2.png" alt="유튜브"></a></nav>
+    
+    <nav class="f_navi">
+    <a href="#">엑시빗뮤지엄</a>
+    <a href="#">이메일수집거부</a>
+    <a href="#">개인정보처리방침</a>
+    <a href="#">공지사항</a>
+  </nav>
+  <address>
+  <p>
+    <img src="./images/maps2.png" alt="주소" class="map_icon">
+    <span>오시는 길</span>
+    <span>서울특별시 종로구 수표로 45</span>
+  </p>
+  <p class="phone">
+    <img src="./images/phone-call2.png" alt="전화번호" class="phone_icon">
+    <span class="phone_icon02">문의전화</span>
+    <span>02-5458-4837</span>
+  </p>
+  </address>
+  <p class="copyright">Copyright&#x24D2;2023 ExhibitMuseum All Rights Reserved</p>
+    </div>
+  </footer>
+  
+</body>

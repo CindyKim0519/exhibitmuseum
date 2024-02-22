@@ -1,0 +1,32 @@
+@charset "utf=8";
+
+@font-face {
+  font-family: 'GmarketSansMedium';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* 공통 서식 */
+/* 1. 글자모양, 크기, 색상 */
+body{
+  font-family: 'GmarketSansMedium', arial, sans-serif;
+  font-size: 12px;
+  color: #333;
+  overflow-x:hidden;
+}
+
+
+/*2. 링크 글자모양, 색 */
+a{
+  font-family: 'GmarketSansMedium', arial, sans-serif;
+  font-size: 12px;
+  color: #333;
+  text-decoration: none; /*밑줄없음*/
+}
+
+
+/* 3. 서브페이지에 들어갈 공통 ui구성요소의 서식 */
+
+/* 버튼, intput, 내비게이션 ...*/
