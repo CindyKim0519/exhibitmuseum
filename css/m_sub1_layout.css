@@ -347,7 +347,8 @@ section>h2{display: none;}
     display: block;}
 
     
-  
+  .m_listset>h2{display:none;}
+  .m_listset2>h2{display:none;}
     .listset{
       width:90%;
       margin:0 auto;
