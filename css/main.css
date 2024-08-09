@@ -73,6 +73,7 @@ main{
   font-size:18px;
   color:#fff;
   border:none;
+  cursor:pointer;
 }
 .grid01{
   width:640px;
@@ -200,10 +201,10 @@ main{
   font-size:18px;
   margin:0 auto;
   position:absolute;
-  top:430px;left:896px;
+  top:270px;left:705px;
   border:1px solid rgba(51, 51, 51,.2);
-  z-index:500;}
-
+  z-index:500;transition:0.5s;}
+.btn01:hover{color:#333;background:#fff;border:1px solid #F280BF;}
 .recommendation>a>img{width:35px; height:35px;}
 .recommendation>h3{font-size:18px;}
 
@@ -235,6 +236,8 @@ main{
 .btn04>a{
   color:#F280BF;
   font-size:18px;}
+.btn04:hover{
+  text-decoration:underline;}
 .a_text02{
   margin:10px 50px; 
   text-align:center;
@@ -289,7 +292,7 @@ main{
     }
 .scroll{
   display:flex;
-  width:1280px; margin:0 auto;
+  width:1280px; margin:10px auto;
 }
 /* 취향대로 전시회 즐기기 */
 .tag_m{width:1280px; 
